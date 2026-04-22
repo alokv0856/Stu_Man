@@ -46,6 +46,7 @@ const auth = (req, res, next) => {
 
 // REGISTER
 app.post("/api/register", async (req, res) => {
+    console.log("DATA RECEIVED:", req.body);
   const { name, email, password, course } = req.body;
 
   try {
